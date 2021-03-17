@@ -23,7 +23,7 @@ services:
      - <your_base_directory>/spotweb:/config
 
   spotweb_db:
-    image: linuxserver/mariadb
+    image: linuxserver/mariadb:alpine
     container_name: spotwebdb
     restart: unless-stopped
     environment:
